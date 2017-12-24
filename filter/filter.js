@@ -26,6 +26,6 @@ const filter = (list, funnels, checkedFunnels) => {
   return filteredList;
 };
 
-  console.log(filter(docs, funnels, checkedFunnels))
+console.log(filter(docs, funnels, checkedFunnels))
 
 module.exports = filter;
