@@ -1,10 +1,4 @@
-const { docs, funnels } = require('./filter-test-data');
-
-let checkedFunnels = {
-  speciality: [1],
-  exp: [2,3],
-  location:[0,2]
-};
+/// filter module definition
 
 const filter = (list, funnels, checkedFunnels) => {
   let filteredList = list;
@@ -25,7 +19,5 @@ const filter = (list, funnels, checkedFunnels) => {
 
   return filteredList;
 };
-
-console.log(filter(docs, funnels, checkedFunnels))
 
 module.exports = filter;
