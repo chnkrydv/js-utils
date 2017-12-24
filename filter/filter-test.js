@@ -4,7 +4,6 @@
 let docs = [
   {
     id: 0,
-    src: '../assets/docs/thumbnail (1).jpeg',
     name: 'Dr Chandan',
     speciality: 'Dentist',
     exp: 1,
@@ -16,9 +15,8 @@ let docs = [
 
   {
     id: 1,
-    src: '../assets/docs/thumbnail (2).jpeg',
     name: 'Dr Man',
-    speciality: 'General',
+    speciality: 'General Physician',
     exp: 7,
     location: 'koramangala 1st Block',
     time: '10:00-11.00',
@@ -27,7 +25,6 @@ let docs = [
 
   {
     id: 2,
-    src: '../assets/docs/thumbnail (3).jpeg',
     name: 'Dr Prashant Pathak',
     speciality: 'Orthopedician',
     exp: 11,
@@ -38,7 +35,6 @@ let docs = [
 
   {
     id: 3,
-    src: '../assets/docs/thumbnail (4).jpeg',
     name: 'Dr Jaya',
     speciality: 'Orthopedician',
     exp: 16,
@@ -49,7 +45,6 @@ let docs = [
 
   {
     id: 4,
-    src: '../assets/docs/thumbnail (5).jpeg',
     name: 'Dr Swati',
     speciality: 'Dentist',
     exp: 12,
@@ -60,9 +55,8 @@ let docs = [
 
   {
     id: 5,
-    src: '../assets/docs/thumbnail (6).jpeg',
     name: 'Dr Gaurav B',
-    speciality: 'General',
+    speciality: 'General Physician',
     exp: 4,
     location: 'Indiranagar 100ft Road',
     time: '2:30-3:00',
@@ -71,9 +65,8 @@ let docs = [
 
   {
     id: 6,
-    src: '../assets/docs/thumbnail (7).jpeg',
     name: 'Dr Harsha M',
-    speciality: 'General',
+    speciality: 'General Physician',
     exp: 19,
     location: 'Indiranagar 100ft Road',
     time: '2:30-3:00',
@@ -82,7 +75,6 @@ let docs = [
 
   {
     id: 7,
-    src: '../assets/docs/thumbnail (8).jpeg',
     name: 'Dr S banerjee',
     speciality: 'Dentist',
     exp: 14,
@@ -93,7 +85,6 @@ let docs = [
 
   {
     id: 8,
-    src: '../assets/docs/thumbnail (9).jpeg',
     name: 'Dr Joseph',
     speciality: 'Orthopedician',
     exp: 1,
@@ -104,7 +95,6 @@ let docs = [
 
   {
     id: 9,
-    src: '../assets/docs/thumbnail (10).jpeg',
     name: 'Dr Ranjith B',
     speciality: 'Gynacologist',
     exp: 1,
@@ -115,7 +105,6 @@ let docs = [
 
   {
     id: 10,
-    src: '../assets/docs/thumbnail (11).jpeg',
     name: 'Dr P Biswas',
     speciality: 'Surgeon',
     exp: 1,
@@ -126,7 +115,6 @@ let docs = [
 
   {
     id: 11,
-    src: '../assets/docs/thumbnail (12).jpeg',
     name: 'Dr KK Mohanty',
     speciality: 'Surgeon',
     exp: 1,
@@ -137,7 +125,7 @@ let docs = [
 ];
 
 let funnels = {
-  speciality: ['Gynacologist', 'Orthopedician', 'General', 'Surgeon', 'Dentist'],
+  speciality: ['Gynacologist', 'Orthopedician', 'General Physician', 'Surgeon', 'Dentist'],
   exp: [
     {
       title: '0-5 years',
