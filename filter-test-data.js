@@ -1,4 +1,36 @@
-export default  [
+let funnels = {
+  speciality: ['Gynacologist', 'Orthopedician', 'General', 'Surgeon', 'Dentist'],
+  exp: [
+    {
+      title: '0-5 years',
+      lower: 0,
+      upper: 5
+    },
+    {
+      title: '5-10 years',
+      lower: 5,
+      upper: 10
+    },
+    {
+      title: '10-15 years',
+      lower: 10,
+      upper: 15
+    },
+    {
+      title: '15-20 years',
+      lower: 15,
+      upper: 20
+    },
+    {
+      title: '20+ years',
+      lower: 20,
+      upper: 120
+    },
+  ],
+  location: ['koramangala 1st Block', 'BTM Layout Petrol Pump', 'Indiranagar 100ft Road'],
+}
+
+let docs = [
   {
     id: 0,
     src: '../assets/docs/thumbnail (1).jpeg',
@@ -15,7 +47,7 @@ export default  [
     id: 1,
     src: '../assets/docs/thumbnail (2).jpeg',
     name: 'Dr Man',
-    speciality: 'General physcian',
+    speciality: 'General',
     exp: 7,
     location: 'koramangala 1st Block',
     time: '10:00-11.00',
@@ -26,7 +58,7 @@ export default  [
     id: 2,
     src: '../assets/docs/thumbnail (3).jpeg',
     name: 'Dr Prashant Pathak',
-    speciality: 'ortho',
+    speciality: 'Orthopedician',
     exp: 11,
     location: 'koramangala 1st Block',
     time: '2:30-3:00',
@@ -37,7 +69,7 @@ export default  [
     id: 3,
     src: '../assets/docs/thumbnail (4).jpeg',
     name: 'Dr Jaya',
-    speciality: 'ortho',
+    speciality: 'Orthopedician',
     exp: 16,
     location: 'Indiranagar 100ft Road',
     time: '2:30-3:00',
@@ -59,7 +91,7 @@ export default  [
     id: 5,
     src: '../assets/docs/thumbnail (6).jpeg',
     name: 'Dr Gaurav B',
-    speciality: 'general',
+    speciality: 'General',
     exp: 4,
     location: 'Indiranagar 100ft Road',
     time: '2:30-3:00',
@@ -70,7 +102,7 @@ export default  [
     id: 6,
     src: '../assets/docs/thumbnail (7).jpeg',
     name: 'Dr Harsha M',
-    speciality: 'general',
+    speciality: 'General',
     exp: 19,
     location: 'Indiranagar 100ft Road',
     time: '2:30-3:00',
@@ -92,7 +124,7 @@ export default  [
     id: 8,
     src: '../assets/docs/thumbnail (9).jpeg',
     name: 'Dr Joseph',
-    speciality: 'ortho',
+    speciality: 'Orthopedician',
     exp: 1,
     location: 'BTM Layout Petrol Pump',
     time: '2:30-3:00',
@@ -103,7 +135,7 @@ export default  [
     id: 9,
     src: '../assets/docs/thumbnail (10).jpeg',
     name: 'Dr Ranjith B',
-    speciality: 'gynacologist',
+    speciality: 'Gynacologist',
     exp: 1,
     location: 'BTM Layout Petrol Pump',
     time: '2:30-3:00',
@@ -114,7 +146,7 @@ export default  [
     id: 10,
     src: '../assets/docs/thumbnail (11).jpeg',
     name: 'Dr P Biswas',
-    speciality: 'surgeon',
+    speciality: 'Surgeon',
     exp: 1,
     location: 'Indiranagar 100ft Road',
     time: '2:30-3:00',
@@ -125,10 +157,12 @@ export default  [
     id: 11,
     src: '../assets/docs/thumbnail (12).jpeg',
     name: 'Dr KK Mohanty',
-    speciality: 'surgeon',
+    speciality: 'Surgeon',
     exp: 1,
     location: 'Indiranagar 100ft Road',
     time: '2:30-3:00',
     bookedAlready: false
   }
 ];
+
+module.exports = { funnels, docs }; 
