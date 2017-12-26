@@ -1,13 +1,12 @@
 const search = (list, searchables, queryString) => {
-  let matchingItemsList = list;
-
-  matchingItemsList = matchingItemsList.filter( item => {
+  
+  let matchedItemsList = list.filter(item => {
     return searchables.some(searchableField => {
-      return item[searchableField].toLowerCase().includes(queryString);
+      return item[searchableField].toLowerCase().includes(queryString.toLowerCase());
     });
   });
 
-  return matchingItemsList;
+  return matchedItemsList;
 }
 
 module.exports = search;
