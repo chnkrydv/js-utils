@@ -12,6 +12,7 @@ const filter = (list, funnels, checkedFunnels) => {
         if (typeof funnels[key][index] === 'object')
           return item[key] >= funnels[key][index]['lower']
             && item[key] <= funnels[key][index]['upper']
+            
         return item[key] === funnels[key][index];
       });
     }); 
