@@ -1,6 +1,5 @@
 /// testing if filter working fine or not
 
-
 let docs = [
   {
     id: 0,
@@ -128,6 +127,9 @@ let searchables = [ 'speciality', 'name' ];
 
 const search = require('./search');
 
+console.log("\nsearch query: 'th'\nsearchable fields: 'name' & 'speciality'\n");
+console.log(search(docs, searchables, 'th'));
+console.log("\n\n\nsearch query: 'chand'\nsearchable fields: 'name' & 'speciality'\n");
 console.log(search(docs, searchables, 'chand'));
 
 /// run this file in node to test the filter modeule
