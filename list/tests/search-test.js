@@ -1,6 +1,5 @@
 /// testing if filter working fine or not
 
-
 let docs = [
   {
     id: 0,
@@ -124,47 +123,14 @@ let docs = [
   }
 ];
 
-let funnels = {
-  speciality: ['Gynacologist', 'Orthopedician', 'General Physician', 'Surgeon', 'Dentist'],
-  exp: [
-    {
-      title: '0-5 years',
-      lower: 0,
-      upper: 5
-    },
-    {
-      title: '5-10 years',
-      lower: 5,
-      upper: 10
-    },
-    {
-      title: '10-15 years',
-      lower: 10,
-      upper: 15
-    },
-    {
-      title: '15-20 years',
-      lower: 15,
-      upper: 20
-    },
-    {
-      title: '20+ years',
-      lower: 20,
-      upper: 120
-    },
-  ],
-  location: ['koramangala 1st Block', 'BTM Layout Petrol Pump', 'Indiranagar 100ft Road'],
-};
+let searchables = [ 'speciality', 'name' ];
 
-let checkedFunnels = {
-  speciality: [1],
-  exp: [2, 3],
-  location: [0, 2]
-};
+const search = require('../search');
 
-const filter = require('./filter');
-
-console.log(filter(docs, funnels, checkedFunnels));
+console.log("\nsearch query: 'th'\nsearchable fields: 'name' & 'speciality'\n");
+console.log(search(docs, searchables, 'TH'));
+console.log("\n\n\nsearch query: 'chand'\nsearchable fields: 'name' & 'speciality'\n");
+console.log(search(docs, searchables, 'cHaNd'));
 
 /// run this file in node to test the filter modeule
 /// this is not some test-file using mocha or chai or enything else :)
