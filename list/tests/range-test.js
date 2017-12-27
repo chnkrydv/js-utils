@@ -1,0 +1,17 @@
+/// testing if RANGE is working fine or not
+
+const docs = require('./fake-docs-list');
+
+const range = require('../range');
+
+console.log("\n\nrange of field: 'speciality'\n");
+console.log(range(docs, 'speciality'));
+console.log("\n\nrange of field: 'exp'\n");
+console.log(range(docs, 'exp'));
+console.log("\n\nrange of field: 'location'\n");
+console.log(range(docs, 'location'));
+console.log("\n\nrange of field: 'time'\n");
+console.log(range(docs, 'time'));
+
+/// run this file in node to test the filter modeule
+/// this is not some test-file using mocha or chai or enything else :)
