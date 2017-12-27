@@ -2,10 +2,9 @@ const range = (list, field) => {
   let allValues = [];
 
   list.map( item => {
-    if(!(field in item)) {
-      console.log('bhak mc');
+    if(!(field in item))
       return;
-    }
+    
     if(!allValues.includes(item[field])) allValues.push(item[field]);
   })
 
