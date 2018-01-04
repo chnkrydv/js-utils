@@ -11,7 +11,7 @@ String.prototype.allFirstCap = function() {
     let strArr = this.split(' ');
     let newStr = firstCap(strArr[0]);
 
-    strArr.map( item => {
+    strArr.forEach( item => {
         newStr += item.length ? ' ' + firstCap(item) : ' ';
     })
 
@@ -23,7 +23,7 @@ String.prototype.allFirstSmall = function() {
     let strArr = this.split(' ');
     let newStr = firstSmall(strArr[0]);
 
-    strArr.map( item => {
+    strArr.forEach( item => {
         newStr += item.length ? ' ' + firstSmall(item) : ' ';
     })
     
