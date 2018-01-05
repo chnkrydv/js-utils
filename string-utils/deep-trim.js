@@ -1,7 +1,7 @@
 String.prototype.deepTrim = function() {
-    let wordArr = this.trim().split(' ');
-
-    return wordArr.reduce( (sentence, word) => sentence + (word.length ? word + ' ' : '') , '');
+    let wordArr = this.split(' ');
+    
+    return (wordArr.reduce( (sentence, word) => sentence + (word.length ? word + ' ' : '') , '')).trim();
 }
 
 module.exports = this;
